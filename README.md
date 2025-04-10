@@ -1,7 +1,7 @@
 # ANTICP3 — Anticancer Protein Prediction
 
 <p align="center">
-  <img src="logo.png" alt="ANTICP3 Logo" width="500"/>
+  <img src="assets/logo.png" alt="ANTICP3 Logo" width="500"/>
 </p>
 
 **ANTICP3** is a LLM-based tool for binary classification of proteins into *Anticancer* or *Non-Anticancer* classes, based solely on their primary amino acid sequences. It leverages the powerful [ESM2-t33](https://huggingface.co/facebook/esm2_t33_650M_UR50D) transformer model, fine-tuned specifically for anticancer protein prediction.
@@ -39,9 +39,10 @@
 | `-t`, `--threshold` | Float (0 to 1)             | Classification threshold for deciding Anticancer vs Non-Anticancer. Default is `0.5`. |
 | `-d`, `--device`| `cpu` or `cuda`            | Device to run inference on. Defaults to `cpu`. If `cuda` is specified and available, inference runs on GPU. |
 
-## Requirements
+## Usage - Standalone
 
-You can install the dependencies using either `conda` or `pip`.
+Download the standalone version and set up the environment.
+**[Download ANTICP3 Standalone Package](https://webs.iiitd.edu.in/raghava/anticp3/down.html)**  
 
 ### Option 1: Using Conda
 
@@ -61,7 +62,7 @@ pip install -r requirements.txt
 
 ## 🤗 Inference via Hugging Face
 
-You can also run predictions using the fine-tuned model directly from [Hugging Face Hub](https://huggingface.co/AmishaG/anticp3):
+You can also run predictions using the fine-tuned model directly from [Hugging Face Hub](https://huggingface.co/raghavagps-group/anticp3):
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
