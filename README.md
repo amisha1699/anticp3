@@ -37,6 +37,7 @@
 | `-i`, `--input` | Path to `.fasta` file      | **(Required)** Input file containing protein sequences in FASTA format.     |
 | `-o`, `--output`| Any valid filename (e.g. `results.csv`) | Output CSV file to save predictions. Default is `output.csv`.           |
 | `-t`, `--threshold` | Float (0 to 1)             | Classification threshold for deciding Anticancer vs Non-Anticancer. Default is `0.5`. |
+| `-m`, `--model` | `1` or `2`             | Classification model for predicting Anticancer vs Non-Anticancer. Default is `1`. |
 | `-d`, `--device`| `cpu` or `cuda`            | Device to run inference on. Defaults to `cpu`. If `cuda` is specified and available, inference runs on GPU. |
 
 ## Usage - Standalone
