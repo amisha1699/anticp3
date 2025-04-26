@@ -1,0 +1,13 @@
+name: anticp3
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - transformers==4.51.1
+  - torch==2.6.0
+  - tqdm==4.67.1
+  - biopython==1.84
+  - colorama==0.4.4
+  - pip
+  - pip:
+      - safetensors==0.5.3
